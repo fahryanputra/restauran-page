@@ -9,7 +9,22 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+}
+
+.btn-nav {
+    padding: 1rem;
+    font-size: 20px;
+    background-color: transparent;
+    transition: transform 0.3s;
+    border: none;
+}
+  
+.btn-nav.active {
+    border-bottom: 2px solid black;
+}
+  
+.btn-nav:hover {
+    transform: translateY(-10%);
 }
 
 #content {
@@ -17,16 +32,17 @@ header {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem 0;
-    padding: 0 3rem;
-    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    margin: 2rem 10rem;
 }
 
 #content > h3 {
     font-size: 40px;
 }
 
-#content > p {
+#content > .description {
     font-size: 30px;
+    text-align: justify;
 }
 
 .img-container {
@@ -53,6 +69,13 @@ header {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer > div {
     display: flex;
     justify-content: center;
 }
