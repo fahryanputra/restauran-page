@@ -1,1 +1,1 @@
-alert("Hello webpack!");
+import './style.css';
