@@ -32,7 +32,17 @@ function createImage(src, creditLink, creditText) {
     return imageContainer;
 }
 
+// Create icon from https://fonts.google.com/icons
+function createIcon(name) {
+    const icon = document.createElement("span");
+    icon.setAttribute("class", "material-symbols-outlined");
+    icon.textContent = name;
+
+    return icon;
+}
+
 export {
     createText,
-    createImage
-}
+    createImage,
+    createIcon,
+};

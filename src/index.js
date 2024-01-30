@@ -2,6 +2,7 @@ import './style.css';
 
 import renderHome from './home';
 import renderMenu from './menu';
+import renderContact from './contact';
 
 function setActiveButton(button) {
     const buttons = document.querySelectorAll(".btn-nav");
@@ -17,9 +18,9 @@ function setActiveButton(button) {
 
 function navController() {
     // Initialize variable
-    const homeButton = document.querySelector(".home");
-    const menuButton = document.querySelector(".menu");
-    const contactButton = document.querySelector(".contact");
+    const homeButton = document.querySelector(".nav-home");
+    const menuButton = document.querySelector(".nav-menu");
+    const contactButton = document.querySelector(".nav-contact");
 
     // Create action for each button
     homeButton.addEventListener("click", (e) => {
@@ -35,6 +36,13 @@ function navController() {
         }
         setActiveButton(menuButton);
         renderMenu();
+    });
+    contactButton.addEventListener("click", (e) => {
+        if(e.target.classList.contains("active")) {
+            return;
+        }
+        setActiveButton(contactButton);
+        renderContact();
     });
 };
 

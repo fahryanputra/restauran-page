@@ -172,12 +172,23 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 .contact > div {
