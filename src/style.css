@@ -133,9 +133,18 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px black solid;
+    border: 3px var(--black) solid;
     border-radius: 1rem;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
+    color: var(--black);
+    gap: 1rem;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card > .title {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .img-container {
@@ -144,8 +153,10 @@ nav {
 }
 
 .img-container > img {
-    width: 450px;
+    width: 100%;
     height: auto;
+    border: 3px var(--black) solid;
+    border-radius: 5px;
 }
 
 .img-container > .credit {
@@ -153,6 +164,8 @@ nav {
     bottom: 8px;
     left: 50%;
     transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
 }
 
 .contact-container {

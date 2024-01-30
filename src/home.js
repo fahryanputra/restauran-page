@@ -1,38 +1,6 @@
+import { createText, createImage } from "./helper";
 import croissantsImage from "./images/home/croissants.jpg";
 import cookiesImage from "./images/home/cookies.jpg";
-
-// Function to create text with 2 parameters.
-// HTML tag and text content
-function createText(text) {
-    const paragraph = document.createElement("p");
-    paragraph.textContent = text;
-
-    return paragraph;
-}
-
-// Function to create image with credits. Containing 3 parameters.
-// Image source, credit link and credit text.
-function createImage(src, creditLink, creditText) {
-    const imageContainer = document.createElement("div");
-    imageContainer.setAttribute("class", "img-container");
-
-    const image = new Image();
-    image.src = src;
-
-    const creditContainer = document.createElement("div");
-    creditContainer.setAttribute("class", "credit")
-
-    const credit = document.createElement("a");
-    credit.href = creditLink;
-    credit.textContent = creditText;
-
-    creditContainer.appendChild(credit);
-
-    imageContainer.appendChild(image);
-    imageContainer.appendChild(creditContainer);
-
-    return imageContainer;
-}
 
 // Function to render the home page.
 function renderHome() {
@@ -73,6 +41,7 @@ function renderHome() {
     // Append description container to the content element.
     // Select content container with id.
     const content = document.getElementById("content");
+    content.textContent = "";
 
     content.appendChild(descriptionContainer);
 };
