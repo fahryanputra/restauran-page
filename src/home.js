@@ -1,11 +1,10 @@
-import './style.css';
-import croissantsImage from "./images/croissants.jpg";
-import cookiesImage from "./images/cookies.jpg";
+import croissantsImage from "./images/home/croissants.jpg";
+import cookiesImage from "./images/home/cookies.jpg";
 
 // Function to create text with 2 parameters.
 // HTML tag and text content
-function createText(tag, text) {
-    const paragraph = document.createElement(tag);
+function createText(text) {
+    const paragraph = document.createElement("p");
     paragraph.textContent = text;
 
     return paragraph;
@@ -43,7 +42,6 @@ function renderHome() {
 
     // Create short description.
     descriptionContainer.appendChild(createText(
-        "h3",
         `"Celebrate Life's Sweet Moments with Ayya's Bakery – Where Every Confection is a Masterpiece."`
         ));
 
@@ -65,11 +63,9 @@ function renderHome() {
     const longDescription = document.createElement("div")
     longDescription.setAttribute("class", "description");
     longDescription.appendChild(createText(
-        "p",
         "At Ayya's Bakery, we blend artisanal expertise with a homey touch. Indulge in our freshly baked bread, decadent pastries, and innovative desserts. From classic traditions to modern delights, each treat reflects our commitment to quality and passion for baking."
     ));
     longDescription.appendChild(createText(
-        "p",
         "Discover a world where every bite is an experience, inviting you to savor the essence of homemade goodness."
     ));
     descriptionContainer.appendChild(longDescription);

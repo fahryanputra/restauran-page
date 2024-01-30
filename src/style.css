@@ -112,8 +112,9 @@ nav {
     gap: 0 2rem;
 }
 
-.desc-container > h3 {
+.desc-container > p {
     font-size: 40px;
+    font-weight: bold;
 }
 
 .desc-container > .description {

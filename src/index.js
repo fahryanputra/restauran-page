@@ -1,6 +1,9 @@
-import renderHome from './home';
+import './style.css';
 
-function NavController() {
+import renderHome from './home';
+import renderMenu from './menu';
+
+function navController() {
     // Initialize variable
     const homeButton = document.querySelector("class", "home");
     const menuButton = document.querySelector("class", "menu");
@@ -11,7 +14,9 @@ function NavController() {
         if(e.target.classList.contains("active")) {
             return;
         }
+        renderHome();
     });
 };
 
 renderHome();
+navController();
