@@ -1,8 +1,8 @@
-import './style.css';
+import 'Templates/style.css';
 
-import renderHome from './home';
-import renderMenu from './menu';
-import renderContact from './contact';
+import renderHome from './components/home/home';
+import renderMenu from './components/menu/menu';
+import renderContact from './components/contact/contact';
 
 function setActiveButton(button) {
     const buttons = document.querySelectorAll(".btn-nav");

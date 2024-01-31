@@ -1,8 +1,8 @@
-import { createText, createImage } from "./helper";
-import breadImage from "./images/menu/artisanal-bread.jpg";
-import dessertImage from "./images/menu/decadent-dessert.jpg";
-import breakfastImage from "./images/menu/sunrise-delights.jpg";
-import teaImage from "./images/menu/tea-time.jpg";
+import { createText, createImage } from "Utilities/utility";
+import breadImage from "./artisanal-bread.jpg";
+import dessertImage from "./decadent-dessert.jpg";
+import breakfastImage from "./sunrise-delights.jpg";
+import teaImage from "./tea-time.jpg";
 
 // Create menu factory function.
 function createMenu(name, description, image, creditLink, creditText) {

@@ -1,4 +1,4 @@
-import { createIcon, createText } from "./helper";
+import { createIcon, createText } from "Utilities/utility";
 
 function renderContact() {
     const contactContainer = document.createElement("div");

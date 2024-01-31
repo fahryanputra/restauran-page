@@ -1,6 +1,6 @@
-import { createText, createImage } from "./helper";
-import croissantsImage from "./images/home/croissants.jpg";
-import cookiesImage from "./images/home/cookies.jpg";
+import { createText, createImage } from "Utilities/utility";
+import croissantsImage from "./croissants.jpg";
+import cookiesImage from "./cookies.jpg";
 
 // Function to render the home page.
 function renderHome() {
